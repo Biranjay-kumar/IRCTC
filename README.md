@@ -1,3 +1,10 @@
+# API Documentation
+
+## Swagger Documentation
+
+You can view the API documentation here:  
+🔗 **[Swagger UI](https://irctc-up13.onrender.com/api-docs/)**  
+
 # IRCTC Clone - Train Ticket Booking System 🚆
 
 This project is a train ticket booking system built using **Node.js, Express, Sequelize, and PostgreSQL**.  
