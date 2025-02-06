@@ -1,0 +1,1593 @@
+{
+	"info": {
+		"_postman_id": "fad09c15-e0d5-40aa-a257-1f446bf33269",
+		"name": "Indian Railway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33177679"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Register user",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"biranjay\",\r\n    \"email\":\"biranjaykumargupta@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/api/v1/user/",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success: true",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"biranjay\",\r\n    \"email\":\"biranjaykumargupta@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:5001/api/v1/user/",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "287"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"11f-hsuDX+Xh1hI57tvMtiqXkol1/T8\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 06 Feb 2025 16:39:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User registered successfully\",\n    \"userId\": {\n        \"role\": \"user\",\n        \"id\": 3,\n        \"username\": \"biranjay\",\n        \"email\": \"biranjaykumargupta@gmail.com\",\n        \"password\": \"$2a$10$DUeNAPfTjfaAPtoci9WcyOJPYko1sgBf8JUsm7pRVvxX/2QY4hx5G\",\n        \"updatedAt\": \"2025-02-06T16:39:01.989Z\",\n        \"createdAt\": \"2025-02-06T16:39:01.989Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"username\":\"sandeep\",\r\n    \"email\":\"biranjaykumarupta@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/api/v1/user/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success: true",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    // \"username\":\"sandeep\",\r\n    \"email\":\"biranjaykumarupta@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:5001/api/v1/user/login",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "438"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1b6-nvEaI0LC2uqJyC1ew6+nfUh7/d4\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 06 Feb 2025 17:07:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Login successful\",\n    \"data\": {\n        \"id\": 4,\n        \"username\": \"sandeep\",\n        \"email\": \"biranjaykumarupta@gmail.com\",\n        \"password\": \"$2a$10$Cqd/ZGHfZ79w699mfYNg6.I1KEC5qLvmVrVtIXMDJgcXFKAlFnF76\",\n        \"role\": \"user\",\n        \"createdAt\": \"2025-02-06T16:46:40.659Z\",\n        \"updatedAt\": \"2025-02-06T16:46:40.659Z\"\n    },\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6InVzZXIiLCJpYXQiOjE3Mzg4NjE2NTUsImV4cCI6MTczOTQ2NjQ1NX0.PxtCy7MW9vGsZfmotmcnxiLpWpqGgjIkRW3vAlSMeQ4\"\n}"
+						}
+					]
+				},
+				{
+					"name": "getuser",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6InVzZXIiLCJpYXQiOjE3Mzg4NjE2NTUsImV4cCI6MTczOTQ2NjQ1NX0.PxtCy7MW9vGsZfmotmcnxiLpWpqGgjIkRW3vAlSMeQ4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/api/v1/user/",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success: true",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6InVzZXIiLCJpYXQiOjE3Mzg4NjE2NTUsImV4cCI6MTczOTQ2NjQ1NX0.PxtCy7MW9vGsZfmotmcnxiLpWpqGgjIkRW3vAlSMeQ4",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:5001/api/v1/user/",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "257"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"101-av5FcVWWcShsAu+T5bDwKd302cY\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 06 Feb 2025 17:13:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"id\": 4,\n        \"username\": \"sandeep\",\n        \"email\": \"biranjaykumarupta@gmail.com\",\n        \"password\": \"$2a$10$Cqd/ZGHfZ79w699mfYNg6.I1KEC5qLvmVrVtIXMDJgcXFKAlFnF76\",\n        \"role\": \"user\",\n        \"createdAt\": \"2025-02-06T16:46:40.659Z\",\n        \"updatedAt\": \"2025-02-06T16:46:40.659Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "register as admin",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM4ODYyNzE1LCJleHAiOjE3Mzk0Njc1MTV9.B4tZGFrcOdgIfFEsLCl2t-Trf2gs6RuuzJOtglnmsGg",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "admin",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"mani\",\r\n    \"email\":\"maniaj@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/api/v1/user/admin/",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"admin",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Suucesss: true",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM4ODYyNzE1LCJleHAiOjE3Mzk0Njc1MTV9.B4tZGFrcOdgIfFEsLCl2t-Trf2gs6RuuzJOtglnmsGg",
+										"type": "text"
+									},
+									{
+										"key": "x-api-key",
+										"value": "admin",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"mani\",\r\n    \"email\":\"maniaj@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:5001/api/v1/user/admin/",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"admin",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "272"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"110-4i/7ZJRy1NJbKvHMLn8ODEOC5ow\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 06 Feb 2025 17:37:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User registered successfully\",\n    \"userId\": {\n        \"id\": 7,\n        \"username\": \"mani\",\n        \"email\": \"maniaj@gmail.com\",\n        \"password\": \"$2a$10$pP96lUmh9NwVOl0aiQOxhuAuylLWzL7.Y4jU8mKljE94gZtY9dL1C\",\n        \"role\": \"admin\",\n        \"updatedAt\": \"2025-02-06T17:37:06.651Z\",\n        \"createdAt\": \"2025-02-06T17:37:06.651Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Station",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM4ODYyNzE1LCJleHAiOjE3Mzk0Njc1MTV9.B4tZGFrcOdgIfFEsLCl2t-Trf2gs6RuuzJOtglnmsGg",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "admin",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"stationName\": \"New Delhi\",\r\n  \"location\": \"Delhi, India\"\r\n//   \"trainIds\":[1]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/api/v1/staion",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"v1",
+								"staion"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success: true",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM4ODYyNzE1LCJleHAiOjE3Mzk0Njc1MTV9.B4tZGFrcOdgIfFEsLCl2t-Trf2gs6RuuzJOtglnmsGg",
+										"type": "text"
+									},
+									{
+										"key": "x-api-key",
+										"value": "admin",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"stationName\": \"New Delhi\",\r\n  \"location\": \"Delhi, India\"\r\n//   \"trainIds\":[1]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:5001/api/v1/staion",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"v1",
+										"staion"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "134"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"86-BSrRlydaJj3n12m+Gvcal8fflM8\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 06 Feb 2025 19:13:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Station created successfully\",\n    \"station\": {\n        \"trainIds\": [],\n        \"stationId\": 1,\n        \"stationName\": \"New Delhi\",\n        \"location\": \"Delhi, India\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get all stations",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM4ODYyNzE1LCJleHAiOjE3Mzk0Njc1MTV9.B4tZGFrcOdgIfFEsLCl2t-Trf2gs6RuuzJOtglnmsGg",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "admin",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"stationName\": \"Surat\",\r\n  \"location\": \"Surat, India\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/api/v1/staion",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"v1",
+								"staion"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success: true",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM4ODYyNzE1LCJleHAiOjE3Mzk0Njc1MTV9.B4tZGFrcOdgIfFEsLCl2t-Trf2gs6RuuzJOtglnmsGg",
+										"type": "text"
+									},
+									{
+										"key": "x-api-key",
+										"value": "admin",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"stationName\": \"Surat\",\r\n  \"location\": \"Surat, India\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:5001/api/v1/staion",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"v1",
+										"staion"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "419"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a3-7eI+i8pir7/amdHJwZcnHYpnUFQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 06 Feb 2025 19:15:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"stations\": [\n        {\n            \"stationId\": 1,\n            \"stationName\": \"New Delhi\",\n            \"location\": \"Delhi, India\",\n            \"trainIds\": []\n        },\n        {\n            \"stationId\": 2,\n            \"stationName\": \"Rajendar nagar\",\n            \"location\": \"Delhi, India\",\n            \"trainIds\": []\n        },\n        {\n            \"stationId\": 3,\n            \"stationName\": \"Patna\",\n            \"location\": \"Delhi, India\",\n            \"trainIds\": []\n        },\n        {\n            \"stationId\": 4,\n            \"stationName\": \"Mumbai\",\n            \"location\": \"Mumbai, India\",\n            \"trainIds\": []\n        },\n        {\n            \"stationId\": 5,\n            \"stationName\": \"Surat\",\n            \"location\": \"Surat, India\",\n            \"trainIds\": []\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get one station",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM4ODYyNzE1LCJleHAiOjE3Mzk0Njc1MTV9.B4tZGFrcOdgIfFEsLCl2t-Trf2gs6RuuzJOtglnmsGg",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "admin",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"stationName\": \"Surat\",\r\n  \"location\": \"Surat, India\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/api/v1/staion/2",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"v1",
+								"staion",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success: true",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM4ODYyNzE1LCJleHAiOjE3Mzk0Njc1MTV9.B4tZGFrcOdgIfFEsLCl2t-Trf2gs6RuuzJOtglnmsGg",
+										"type": "text"
+									},
+									{
+										"key": "x-api-key",
+										"value": "admin",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"stationName\": \"Surat\",\r\n  \"location\": \"Surat, India\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:5001/api/v1/staion/2",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"v1",
+										"staion",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "98"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"62-SN6GPBZUhE5SqqbglINH3YyoAQc\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 06 Feb 2025 19:16:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"station\": {\n        \"stationId\": 2,\n        \"stationName\": \"Rajendar nagar\",\n        \"location\": \"Delhi, India\",\n        \"trainIds\": []\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Trains",
+			"item": [
+				{
+					"name": "Add trains",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM4ODYyNzE1LCJleHAiOjE3Mzk0Njc1MTV9.B4tZGFrcOdgIfFEsLCl2t-Trf2gs6RuuzJOtglnmsGg",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "admin",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"trainName\": \"Rajdhani Express\",\r\n  \"sourceStationId\": 1,\r\n  \"destinationStationId\": 5,\r\n  \"totalSeats\": 500,\r\n  \"availableSeats\": 500,\r\n  \"stationIds\":[1, 2, 3]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/api/v1/train",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"v1",
+								"train"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success: true",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM4ODYyNzE1LCJleHAiOjE3Mzk0Njc1MTV9.B4tZGFrcOdgIfFEsLCl2t-Trf2gs6RuuzJOtglnmsGg",
+										"type": "text"
+									},
+									{
+										"key": "x-api-key",
+										"value": "admin",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"trainName\": \"Rajdhani Express\",\r\n  \"sourceStationId\": 1,\r\n  \"destinationStationId\": 5,\r\n  \"totalSeats\": 500,\r\n  \"availableSeats\": 500,\r\n  \"stationIds\":[1, 2, 3]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:5001/api/v1/train",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"v1",
+										"train"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "275"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"113-kWUT6T5ds8j9sKf9432oBMtexe4\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 06 Feb 2025 19:54:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Train created successfully and stations updated\",\n    \"train\": {\n        \"trainId\": 1,\n        \"trainName\": \"Rajdhani Express\",\n        \"sourceStationId\": 1,\n        \"destinationStationId\": 5,\n        \"totalSeats\": 500,\n        \"availableSeats\": 500,\n        \"updatedAt\": \"2025-02-06T19:54:01.244Z\",\n        \"createdAt\": \"2025-02-06T19:54:01.244Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get all trains",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM4ODYyNzE1LCJleHAiOjE3Mzk0Njc1MTV9.B4tZGFrcOdgIfFEsLCl2t-Trf2gs6RuuzJOtglnmsGg",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "admin",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/api/v1/train",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"v1",
+								"train"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success: true",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM4ODYyNzE1LCJleHAiOjE3Mzk0Njc1MTV9.B4tZGFrcOdgIfFEsLCl2t-Trf2gs6RuuzJOtglnmsGg",
+										"type": "text"
+									},
+									{
+										"key": "x-api-key",
+										"value": "admin",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:5001/api/v1/train",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"v1",
+										"train"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "615"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"267-fPtUnBWQFqo0yu7+DV8RHP6qG50\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 06 Feb 2025 20:06:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"trains\": [\n        {\n            \"trainId\": 1,\n            \"trainName\": \"Rajdhani Express\",\n            \"sourceStationId\": 1,\n            \"destinationStationId\": 5,\n            \"totalSeats\": 500,\n            \"availableSeats\": 500,\n            \"createdAt\": \"2025-02-06T19:54:01.244Z\",\n            \"updatedAt\": \"2025-02-06T19:54:01.244Z\"\n        },\n        {\n            \"trainId\": 2,\n            \"trainName\": \"Local\",\n            \"sourceStationId\": 1,\n            \"destinationStationId\": 2,\n            \"totalSeats\": 200,\n            \"availableSeats\": 100,\n            \"createdAt\": \"2025-02-06T20:02:05.714Z\",\n            \"updatedAt\": \"2025-02-06T20:02:05.714Z\"\n        },\n        {\n            \"trainId\": 3,\n            \"trainName\": \"Bullet Train\",\n            \"sourceStationId\": 1,\n            \"destinationStationId\": 2,\n            \"totalSeats\": 200,\n            \"availableSeats\": 100,\n            \"createdAt\": \"2025-02-06T20:02:59.592Z\",\n            \"updatedAt\": \"2025-02-06T20:02:59.592Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get trains",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM4ODYyNzE1LCJleHAiOjE3Mzk0Njc1MTV9.B4tZGFrcOdgIfFEsLCl2t-Trf2gs6RuuzJOtglnmsGg",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "admin",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/api/v1/train/3",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"v1",
+								"train",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success: true",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM4ODYyNzE1LCJleHAiOjE3Mzk0Njc1MTV9.B4tZGFrcOdgIfFEsLCl2t-Trf2gs6RuuzJOtglnmsGg",
+										"type": "text"
+									},
+									{
+										"key": "x-api-key",
+										"value": "admin",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:5001/api/v1/train/3",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"v1",
+										"train",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "169"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a9-k97DDFBl12yBy3N10O13cb7e/A8\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 06 Feb 2025 20:20:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"train\": {\n        \"trainId\": 3,\n        \"trainName\": \"Bullet Train\",\n        \"totalSeats\": 200,\n        \"availableSeats\": 100,\n        \"sourceStation\": \"New Delhi\",\n        \"destinationStation\": \"Rajendar nagar\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Booking",
+			"item": [
+				{
+					"name": "Booking Successful",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM4ODYyNzE1LCJleHAiOjE3Mzk0Njc1MTV9.B4tZGFrcOdgIfFEsLCl2t-Trf2gs6RuuzJOtglnmsGg",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "admin",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"sourceStationId\": 1,\r\n  \"destinationStationId\": 2,\r\n  \"seatCount\": 2,\r\n  \"trainId\": 2\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/api/v1/booking",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"v1",
+								"booking"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successs: True",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM4ODYyNzE1LCJleHAiOjE3Mzk0Njc1MTV9.B4tZGFrcOdgIfFEsLCl2t-Trf2gs6RuuzJOtglnmsGg",
+										"type": "text"
+									},
+									{
+										"key": "x-api-key",
+										"value": "admin",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"sourceStationId\": 1,\r\n  \"destinationStationId\": 2,\r\n  \"seatCount\": 2,\r\n  \"trainId\": 2\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:5001/api/v1/booking",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"v1",
+										"booking"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "72"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"48-DtRACyxPHNRu+c+erwb9lX4XEl0\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 06 Feb 2025 21:07:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Booking successful\",\n    \"bookingId\": 1,\n    \"trainId\": 2,\n    \"seatCount\": 2\n}"
+						}
+					]
+				},
+				{
+					"name": "Booking unsuccessful",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM4ODYyNzE1LCJleHAiOjE3Mzk0Njc1MTV9.B4tZGFrcOdgIfFEsLCl2t-Trf2gs6RuuzJOtglnmsGg",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "admin",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"sourceStationId\": 1,\r\n  \"destinationStationId\": 2,\r\n  \"seatCount\": 2,\r\n  \"trainId\": 3\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/api/v1/booking",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"v1",
+								"booking"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success: false",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM4ODYyNzE1LCJleHAiOjE3Mzk0Njc1MTV9.B4tZGFrcOdgIfFEsLCl2t-Trf2gs6RuuzJOtglnmsGg",
+										"type": "text"
+									},
+									{
+										"key": "x-api-key",
+										"value": "admin",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"sourceStationId\": 1,\r\n  \"destinationStationId\": 2,\r\n  \"seatCount\": 2,\r\n  \"trainId\": 3\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:5001/api/v1/booking",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"v1",
+										"booking"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "65"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"41-RFWR1V21dk9cFNusuagwkhwTUmU\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 06 Feb 2025 21:08:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"This train does not stop at the destination station\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Empty slots between two station ",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM4ODYyNzE1LCJleHAiOjE3Mzk0Njc1MTV9.B4tZGFrcOdgIfFEsLCl2t-Trf2gs6RuuzJOtglnmsGg",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "admin",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"sourceStationId\": 1,\r\n  \"destinationStationId\": 2\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/api/v1/booking/empty-slots",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"v1",
+								"booking",
+								"empty-slots"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success: true",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzM4ODYyNzE1LCJleHAiOjE3Mzk0Njc1MTV9.B4tZGFrcOdgIfFEsLCl2t-Trf2gs6RuuzJOtglnmsGg",
+										"type": "text"
+									},
+									{
+										"key": "x-api-key",
+										"value": "admin",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"sourceStationId\": 1,\r\n  \"destinationStationId\": 3\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:5001/api/v1/booking/empty-slots",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"v1",
+										"booking",
+										"empty-slots"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "154"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9a-WcxzF+jE2dlmpdw0LzCEJhuItz8\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 06 Feb 2025 21:20:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"totalAvailableSeats\": 198,\n    \"trains\": [\n        {\n            \"trainName\": \"Local\",\n            \"trainId\": 2,\n            \"availableSeats\": 98\n        },\n        {\n            \"trainName\": \"Bullet Train\",\n            \"trainId\": 3,\n            \"availableSeats\": 100\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
