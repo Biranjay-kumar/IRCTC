@@ -48,6 +48,21 @@ class BookingController {
       return res.status(500).json({ message: error.message || 'Error while canceling booking' });
     }
   }
+
+  static async getBookingById(req, res) {
+    const { bookingId } = req.params;
+    const  userId  = req.user.dataValues.id;
+
+    try {
+      
+      const booking = await BookingService.getBookingById(bookingId, userId);
+
+      return res.status(200).json({success: true, booking});
+    } catch (error) {
+      return res.status(500).json({ success: false, message: error.message || 'Error while fetching booking' });
+    }
+  }
+
 }
 
 export default BookingController;

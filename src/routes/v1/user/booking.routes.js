@@ -15,4 +15,6 @@ bookingRouter.delete(
   authMiddleware,
   BookingController.cancelBooking
 );
+
+bookingRouter.get("/:bookingId", authMiddleware, BookingController.getBookingById);
 export default bookingRouter;

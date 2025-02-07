@@ -141,6 +141,15 @@ class BookingService {
       throw new Error("Error while canceling booking");
     }
   }
+  // get booking by id
+  static async getBookingById(bookingId, userId) {
+    const booking = await Booking.findOne({ where: { bookingId, userId } });
+    if (!booking) {
+      throw new Error("Booking not found");
+    }
+
+    return booking;
+  } 
 }
 
 export default BookingService;
